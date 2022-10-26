@@ -15,5 +15,5 @@ result = DatabaseConnection.exec_params(sql,[])
 
 # print out each record from the result set
 result.each do |record|
-  p record
+  p record.values.join(" - ")
 end
